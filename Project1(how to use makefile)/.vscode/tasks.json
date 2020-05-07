@@ -1,0 +1,40 @@
+{
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "g++ build active file",
+            "command": "make",
+            "args": [],
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "type": "shell",
+            "label": "g++ build active file",
+            "command": "make",
+            "args": ["clean_o"],
+            "problemMatcher": [],
+        }
+    ],
+    "version": "2.0.0"
+}
+
+/*
+    //若使用g++代码如下
+    "command:"g++"
+    "args": [
+        /*"-g",
+        "${fileDirname}/*.cpp",
+        "-o",
+        "${fileDirname}/${fileBasenameNoExtension}"  
+    ]
+    "options": {//[使用make命令必须删除该段代码]
+        "cwd": "/usr/bin"
+    },
+        
+        [Tips:使用g++编译器时使用这段代码] 
+*/
+                
